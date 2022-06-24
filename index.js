@@ -119,3 +119,5 @@ function init() {
         addManagerProfile();
     });
 };
+
+init()
