@@ -76,7 +76,7 @@ function addNonManagerTeamMember(){
                 case "Add an Intern Profile":
                 addInternProfile();
                 break;
-                case "Done Generating Profiles";
+                case "Done Generating Profiles":
                 generateHtmlFile();
                 break;
         };
