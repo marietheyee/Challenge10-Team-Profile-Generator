@@ -3,10 +3,12 @@ const inquirer = require("inquirer");
 
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 
 const EmployeeQs = require("./lib/EmployeeQs");
 const ManagerQs = require("./lib/ManagerQs");
 const EngineerQs = require("./lib/EngineerQs");
+const InternQs = require("./lib/InternQs");
 const holdHtml = require("./lib/html-template");
 
 let teamProfileArr = [];
@@ -90,7 +92,7 @@ function addManagerProfile() {
         const managerId = data.managerId;
         const managerEmail = data.managerEmail;
         const managerOfficeNum = data.managerOfficeNum;
-        const teamMember = newManager(managerName, managerId, managerEmail, managerOfficeNum);
+        const teamMember = new Manager(managerName, managerId, managerEmail, managerOfficeNum);
 
         teamProfileArr.push(teamMember);
 
