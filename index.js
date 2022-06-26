@@ -18,7 +18,7 @@ const writeToFile = (holdHtmlArr) => {
         outputFileName = teamProfileArr[0].toLowerCase();
         outputFileName = outputFileName.replace(/ /g, "-");
 
-        fs.writeFile(`./dist/${companyFileName}.html`, holdHtmlArr.join(""), function(err){
+        fs.writeFile(`./dist/index.html`, holdHtmlArr.join(""), function(err){
             if (err) {
                 reject (err);
                 return;
